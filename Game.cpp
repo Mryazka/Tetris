@@ -285,12 +285,10 @@ void Game::Logic(forms * ptrobj)
 					if (turncounter == 0)
 					{
 						turncounter = 4;
-						break;
 					}
 					else
 					{
 						turncounter--;
-						break;
 					}
 				}
 			}
@@ -580,6 +578,7 @@ bool Game::TryTurn(forms * ptrobj, int turncounter)
 			return false;
 		}
 	}
+	free(tempForm);
 	return true;
 }
 
