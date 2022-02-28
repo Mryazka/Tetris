@@ -1,0 +1,6 @@
+﻿  Game.cpp
+c:\users\дарт вейдер\documents\visual studio 2015\projects\tetris\game.cpp(369): warning C4018: '<': signed/unsigned mismatch
+c:\users\дарт вейдер\documents\visual studio 2015\projects\tetris\game.cpp(479): warning C4804: '<': unsafe use of type 'bool' in operation
+c:\users\дарт вейдер\documents\visual studio 2015\projects\tetris\game.cpp(492): warning C4715: 'Game::pos_in_arr': not all control paths return a value
+  Tetris.vcxproj -> C:\Users\Дарт Вейдер\documents\visual studio 2015\Projects\Tetris\Debug\Tetris.exe
+  Tetris.vcxproj -> C:\Users\Дарт Вейдер\documents\visual studio 2015\Projects\Tetris\Debug\Tetris.pdb (Full PDB)

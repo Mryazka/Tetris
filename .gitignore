@@ -7,6 +7,10 @@
 *.o
 *.obj
 
+#some ignore
+.vs/
+
+
 # Precompiled Headers
 *.gch
 *.pch
