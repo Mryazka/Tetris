@@ -1,0 +1,12 @@
+﻿  stdafx.cpp
+  form.cpp
+  Game.cpp
+C:\Users\Сергей\source\repos\Tetris\Game.cpp(29,18): warning C4154: удаление массива; выполнено преобразование к указателю
+C:\Users\Сергей\source\repos\Tetris\Game.cpp(31,14): warning C4154: удаление массива; выполнено преобразование к указателю
+C:\Users\Сергей\source\repos\Tetris\Game.cpp(32,19): warning C4154: удаление массива; выполнено преобразование к указателю
+C:\Users\Сергей\source\repos\Tetris\Game.cpp(508,39): warning C4804: <: небезопасное использование типа "bool" в операции
+  Tetris.cpp
+  Создание кода...
+C:\Users\Сергей\source\repos\Tetris\Game.cpp(521): warning C4715: Game::pos_in_arr: значение возвращается не при всех путях выполнения
+C:\Users\Сергей\source\repos\Tetris\form.cpp(200): warning C4172: возвращение адреса локальной или временной переменной : arr_coords
+  Tetris.vcxproj -> C:\Users\Сергей\source\repos\Tetris\x64\Debug\Tetris.exe
