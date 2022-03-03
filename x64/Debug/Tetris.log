@@ -1,4 +1,0 @@
-﻿  Game.cpp
-C:\Users\Сергей\source\repos\Tetris\Game.cpp(477,39): warning C4804: <: небезопасное использование типа "bool" в операции
-C:\Users\Сергей\source\repos\Tetris\Game.cpp(490): warning C4715: Game::pos_in_arr: значение возвращается не при всех путях выполнения
-  Tetris.vcxproj -> C:\Users\Сергей\source\repos\Tetris\x64\Debug\Tetris.exe
