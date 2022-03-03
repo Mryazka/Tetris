@@ -9,7 +9,7 @@
 
 #some ignore
 .vs/
-
+**Debug
 
 # Precompiled Headers
 *.gch

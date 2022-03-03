@@ -5,10 +5,31 @@
 #include <stdio.h>
 #include "windows.h"
 
-
+//Game::Game()
+//{
+//	map = new bool* [width];
+//	for (size_t i = 0; i < width; i++)
+//	{
+//		map[i] = new bool[height];
+//	}
+//	for (size_t i = 0; i < width; i++)
+//	{
+//		for (size_t j = 0; j < height; j++)
+//		{
+//			map[i][j] = false;
+//		}
+//
+//	}
+//}
 
 Game::~Game()
 {
+	for (size_t i = 0; i < width; i++)
+	{
+		delete[] map[i];
+	}
+	delete[] map;
+	delete[] CoorVec1;
 	delete this;
 }
 
@@ -417,6 +438,8 @@ void Game::Logic(forms * ptrobj)
 	}
 	if (maxHeight <= 3) { gameOver = true; }
 }
+
+
 
 void Game::ShiftField(int count)
 {
