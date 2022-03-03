@@ -26,6 +26,14 @@ class Game
 	std::pair<int, int> nullpair = { 0,0 };
 	int maxHeight = height - 1;
 
+	bool LHeight;
+	bool LMidle;
+	bool LDown;
+
+	bool RHeight;
+	bool RMidle;
+	bool RDown;
+
 public:
 	void gameInitializing(forms* ptrobj);
 	int getwidth();

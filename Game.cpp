@@ -147,7 +147,12 @@ void Game::Logic(forms * ptrobj)
 		turncounter = 0;
 		break;
 	case LEFT:
-		if (map[ptrobj->getLeftcoords().first - 1][ptrobj->getLeftcoords().second]) { ptrobj->changecoords(0, 0); dir = MOVE; break; }
+
+		LHeight = map[ptrobj->getLeftcoords().first - 1][ptrobj->getheighstcoords().second];
+		LMidle = map[ptrobj->getLeftcoords().first - 1][ptrobj->getLeftcoords().second];
+		LDown = map[ptrobj->getLeftcoords().first - 1][ptrobj->getDowncoords().second];
+
+		if ( LHeight|| LMidle || LDown ) { ptrobj->changecoords(0, 0); dir = MOVE; break; }
 		else
 		{
 			for (int i = 0; i < 4; i++)
@@ -164,7 +169,12 @@ void Game::Logic(forms * ptrobj)
 			break;
 		}
 	case RIGHT:
-		if (map[ptrobj->getRightcoords().first + 1][ptrobj->getRightcoords().second]) { ptrobj->changecoords(0, 0); dir = MOVE; break; }
+
+		RHeight = map[ptrobj->getRightcoords().first + 1][ptrobj->getheighstcoords().second];
+		RMidle = map[ptrobj->getRightcoords().first + 1][ptrobj->getRightcoords().second];
+		RDown = map[ptrobj->getRightcoords().first + 1][ptrobj->getDowncoords().second];
+
+		if (RHeight || RMidle || RDown) { ptrobj->changecoords(0, 0); dir = MOVE; break; }
 		else
 		{
 			for (int i = 0; i < 4; i++)
@@ -248,7 +258,6 @@ void Game::Logic(forms * ptrobj)
 				{
 					ptrobj->changecoords(-1, 0);
 					turncounter--;
-					break;
 				}
 			}
 			else if (CheckerBoolPair.second)
@@ -266,7 +275,6 @@ void Game::Logic(forms * ptrobj)
 				{
 					ptrobj->changecoords(1, 0);
 					turncounter--;
-					break;
 				}
 			}
 			else
